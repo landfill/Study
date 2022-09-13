@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>doc</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class ="alert-box" id="alert">
+        <p id ="title">Next</p></div>
+    <button id="close">x</button>
+    <button onclick="click_b('block','Unknown User');">Btn1</button>
+    <button onclick="click_b('block','Invalid Passwd');">Btn2</button>
+    
+    
+<script>
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('alert').style.display='none';
+    });
+      
+    function click_b(param1,param2){
+        document.getElementById('title').innerHTML = param2;
+        document.getElementById('alert').style.display=param1;
+        
+    }
+//    function open_b(){
+//        document.getElementById('alert').style.display='block';
+//    }
+//    function close_b(){
+//        document.getElementById('alert').style.display='none';
+//    }
+//    document.getElementById('hello').innerHTML='Goodd';
+//    document.getElementById('hello').style.color = 'red';
+//    document.getElementById('hello').style.fontSize ='80px' ;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <h4 id="test" style="color:red">test</h4>
+    <script>
+    $('#test').html('GOD');
+    $('#test').css('color','blue');
+    
+        $('#test').addClass('yellow-bg');
+        
+    
+   /* 삭제대상
+    var nunu = {
+        q : 'consume',
+        w : 'snowball'
+    }
+    var garen = {
+        q : 'strike',
+        w : 'courage'
+    }*/
+
+    function machine(abil1,abil2){
+        this.q = abil1;
+        this.w = abil2;
+    }
+
+    var nunu = new machine('consume','snowball');
+    
+        class Hero { // Js Construnctor
+            constructor(abil3,abil4){
+                this.q = abil3;
+                this.w = abil4;
+            }
+        }
+      
+    </script>
+    </body>
+</html>
