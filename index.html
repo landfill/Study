@@ -70,6 +70,20 @@
             }
         }
       
+        fetch('https://codingapple1.github.io/price.json')
+            .then ((response) => {
+                if (!response.ok) {
+                    throw ne Error('400 or 500 err')
+                }
+                return response.json()
+            })
+            .then ((res) => {
+                console.log(res)
+            })
+            .catch(() => {
+                console.log('err')
+            })
+        })
     </script>
     </body>
 </html>
